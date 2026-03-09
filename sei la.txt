@@ -1,0 +1,154 @@
+Microsoft Windows [versão 10.0.26100.7840]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\TEMP.CEEP.069>cd desktop
+
+C:\Users\TEMP.CEEP.069\Desktop>cd aula-git
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git init
+Reinitialized existing Git repository in C:/Users/TEMP.CEEP.069/Desktop/aula-git/.git/
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git config --global user.name "bruno levi"
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git config --global user.email "brun212312@gmail.com"
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git remote add origin https://github.com/SEUUSUARIO/aula-git.git
+error: remote origin already exists.
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git add .
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git commit -m
+error: switch `m' requires a value
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git commit -m "adicionei arquivo python"
+[main 87c73cd] adicionei arquivo python
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git push --set-upstream origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 546 bytes | 546.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BrunoLevi18/repositorio1.git
+   ee9455c..87c73cd  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git add .
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git commit -m "adicionei mais conteúdo no arquivo"
+[main 641e315] adicionei mais conteúdo no arquivo
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abacate.txt
+ create mode 100644 sei la.txt
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BrunoLevi18/repositorio1.git
+   87c73cd..641e315  main -> main
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git add .
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git commit -m "modifiquei o arquivo"
+[main f500318] modifiquei o arquivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 abacate.txt
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 226.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/BrunoLevi18/repositorio1.git
+   641e315..f500318  main -> main
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>git clone https://github.com/BrunoLevi18/repositorio1.git
+Cloning into 'repositorio1'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 17 (delta 1), reused 10 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (17/17), 14.97 KiB | 403.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git>cd repositorio1
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git branch
+* main
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git branch teste
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git branch
+* main
+  teste
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git checkout teste
+Switched to branch 'teste'
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git branc
+git: 'branc' is not a git command. See 'git --help'.
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git branch
+  main
+* teste
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git commit -m "teste"
+On branch teste
+nothing to commit, working tree clean
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git add .
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git commit -m "teste"
+On branch teste
+nothing to commit, working tree clean
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git add .
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git commit -m "teste dinossauro"
+[teste 3682e94] teste dinossauro
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dinossauro.txt
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>git push -u origin teste
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 315 bytes | 315.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'teste' on GitHub by visiting:
+remote:      https://github.com/BrunoLevi18/repositorio1/pull/new/teste
+remote:
+To https://github.com/BrunoLevi18/repositorio1.git
+ * [new branch]      teste -> teste
+branch 'teste' set up to track 'origin/teste'.
+
+C:\Users\TEMP.CEEP.069\Desktop\aula-git\repositorio1>
+
+
+
+
